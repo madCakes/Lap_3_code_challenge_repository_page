@@ -38,3 +38,15 @@
 #searchFormBg input[type='submit']:hover {
   background-color: #f2f3f4;
 }
+
+@media (min-width: 780px) {
+  #searchFormBg input#search-box {
+    width: 34rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #searchFormBg input[type='submit'] {
+    font-size: 1rem;
+  }
+}

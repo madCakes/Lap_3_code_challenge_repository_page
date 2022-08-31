@@ -39,8 +39,19 @@
   padding: 0.5rem;
 }
 
+.tab_title3:hover {
+  border-radius: 1rem;
+}
+
 #repoCount {
   background-color: #c0c0c0;
   border-radius: 1rem;
   padding: 0.3rem;
+}
+
+@media (min-width: 780px) {
+  #bothTabsContainer {
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
 }

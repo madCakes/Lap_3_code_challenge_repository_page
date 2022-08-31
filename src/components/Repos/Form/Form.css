@@ -30,3 +30,25 @@
 .repo_search_input:focus {
   border: solid 0.1rem #c0c0c0;
 }
+
+@media (min-width: 780px) {
+  .repo_search_input {
+    width: 45rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    position: relative;
+    top: 0.1rem;
+  }
+
+  .repo_search_input {
+    padding: 0.5rem 0.5rem 0.5rem 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .repo_search_input {
+    width: 50rem;
+    font-size: 1.5rem;
+  }
+}

@@ -21,3 +21,10 @@
 .btn:hover {
   background-color: #f2f3f4;
 }
+
+@media (min-width: 1200px) {
+  #btnBg {
+    margin: 1.5rem 0 0 2rem;
+    text-align: center;
+  }
+}

@@ -26,6 +26,7 @@ const Search = ({ handleSearch }) => {
           onChange={handleInput}
           value={inputValue}
           required
+          placeholder="Search or jump to..."
         />
         <input type="submit" value="Search" />
       </form>

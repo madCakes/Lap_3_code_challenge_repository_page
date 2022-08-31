@@ -35,7 +35,7 @@
   text-align: center;
   line-height: 2rem;
   border-top: #696969 solid 0.2rem;
-  margin: 5rem 1rem 0;
+  margin: 5rem 0 0;
 }
 
 #footerBg span {
@@ -53,4 +53,11 @@
 
 #footerBg p {
   color: #c0c0c0;
+}
+
+@media (min-width: 1200px) {
+  #footerBg {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
 }

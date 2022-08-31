@@ -70,3 +70,15 @@
   color: #0000ff;
   cursor: pointer;
 }
+
+@media (min-width: 780px) {
+  #repoLinksBg {
+    margin: 2rem 3rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #repoLinksBg {
+    margin: 2rem 12rem 0;
+  }
+}
