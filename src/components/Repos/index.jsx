@@ -11,7 +11,14 @@ const Repos = () => {
       <Form />
       <Buttons />
       <h4>Repositories</h4>
-      <RepoLinks />
+      <section id="repoLinksBg">
+        <RepoLinks />
+        <hr className="repo_divider" />
+        <RepoLinks />
+        <hr className="repo_divider" />
+        <RepoLinks />
+      </section>
+
       <Footer />
     </>
   );
