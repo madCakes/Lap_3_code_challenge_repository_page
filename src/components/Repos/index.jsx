@@ -12,17 +12,18 @@ const Repos = ({ repoData }) => {
       <Buttons />
       <h4>Repositories</h4>
       <section id="repoLinksBg">
-        {repoData.map((repo) => (
-          <>
-            <RepoLinks
-              key={repo["id"]}
-              repoName={repo["name"]}
-              url={repo["svn_url"]}
-              repoData={repoData}
-            />
-            <hr className="repo_divider" />
-          </>
-        ))}
+        {repoData.map((repo) => {
+          return (
+            <div key={repo["id"]}>
+              <RepoLinks
+                repoName={repo["name"]}
+                url={repo["svn_url"]}
+                repoData={repoData}
+              />
+              <hr className="repo_divider" />
+            </div>
+          );
+        })}
       </section>
       <Footer />
     </>
