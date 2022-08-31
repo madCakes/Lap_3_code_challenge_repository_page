@@ -1,16 +1,16 @@
-import React from "react";
-import axios from "axios";
-import { useEffect } from "react";
+import React, { useState } from "react";
 
-const Search = () => {
-  useEffect(() => {}, []);
+const Search = ({ handleSearch }) => {
+  const [inputValue, setInputValue] = useState("");
 
   const handleInput = (e) => {
     const newInput = e.target.value;
+    setInputValue(newInput);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    handleSearch(inputValue);
   };
 
   return (
@@ -22,7 +22,10 @@ const Search = () => {
           name="search"
           id="search-box"
           onChange={handleInput}
+          value={inputValue}
+          required
         />
+        <input type="submit" value="Search" />
       </form>
     </>
   );
