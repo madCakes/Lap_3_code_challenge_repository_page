@@ -7,7 +7,9 @@ const RepoLinks = ({ repoName, url, repoData }) => {
     <>
       <ul id="listBg">
         <li>
-          <a href="url">{repoName}</a>
+          <a href={url} target="_blank">
+            {repoName}
+          </a>
           <span className="public_private">Public</span>
         </li>
         <li>Cohort repository for Bhatia</li>
