@@ -10,7 +10,7 @@ const Repos = () => {
     <>
       <Form />
       <Buttons />
-      <RepoLinks />
+      <h4>Repositories</h4>
       <RepoLinks />
       <Footer />
     </>
