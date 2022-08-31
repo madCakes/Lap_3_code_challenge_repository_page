@@ -1,0 +1,24 @@
+/* footer */
+
+#footerBg {
+  margin-top: 3rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#footerBg span {
+  color: #0000ff;
+}
+
+#footerBg span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#footerBg .fa-brands.fa-github {
+  color: #696969;
+}
+
+#footerBg p {
+  color: #c0c0c0;
+}
