@@ -6,14 +6,12 @@ const Repos = () => {
   return (
     <>
       <form action="#" method="get" id="repoFormBg">
-        <button className="search-button">
-          <i className="fa-solid fa-magnifying-glass"></i>
-        </button>
+        <i className="fa-solid fa-magnifying-glass search_button"></i>
 
         <input
           type="text"
           placeholder="Find a repository..."
-          className="repo_search"
+          className="repo_search_input"
         />
       </form>
     </>
