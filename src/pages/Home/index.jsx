@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import { MainHeader, Repos, Search, RepoCard } from "../../components";
+import { Header, Repos, Search } from "../../components";
 
 const Home = () => {
   const [repoData, setRepoData] = useState([]);
@@ -34,10 +34,7 @@ const Home = () => {
 
   return (
     <>
-      <MainHeader />
-      <main>
-        <Repos />
-        <Search handleSearch={handleSearch} />
+      <Search handleSearch={handleSearch} />
         <div>
           {repoData.map((repo, i) => (
             <RepoCard
@@ -46,8 +43,11 @@ const Home = () => {
               url={repo["svn_url"]}
             />
           ))}
-        </div>
-      </main>
+        </div>     
+      <Header />
+      <main>
+        <Repos />
+      </main>                    
     </>
   );
 };

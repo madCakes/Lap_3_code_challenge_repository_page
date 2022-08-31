@@ -4,7 +4,6 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { RepoProvider } from "./context";
 
-import "./index.css";
 import NavBar from "./components/NavBar/index";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

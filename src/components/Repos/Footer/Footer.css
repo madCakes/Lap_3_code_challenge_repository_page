@@ -1,0 +1,63 @@
+/* footer */
+
+/* repo 'footer' */
+#repoLinksFooterBg {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+#repoLinksFooterBg button {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  border: #fff solid 0.1rem;
+  font-size: 1rem;
+}
+
+#repoLinksFooterBg button:nth-child(1) {
+  color: #c0c0c0;
+}
+
+#repoLinksFooterBg button:nth-child(2) {
+  color: #0000ff;
+}
+
+#repoLinksFooterBg button:nth-child(2):hover {
+  border: #e5e4e2 solid 0.1rem;
+}
+
+/* actual footer */
+#footerBg {
+  text-align: center;
+  line-height: 2rem;
+  border-top: #696969 solid 0.2rem;
+  margin: 5rem 0 0;
+}
+
+#footerBg span {
+  color: #0000ff;
+}
+
+#footerBg span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#footerBg .fa-brands.fa-github {
+  color: #696969;
+}
+
+#footerBg p {
+  color: #c0c0c0;
+}
+
+@media (min-width: 1200px) {
+  #footerBg {
+    line-height: 3rem;
+    font-size: 1.2rem;
+  }
+}
