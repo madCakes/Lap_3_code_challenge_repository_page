@@ -1,21 +1,24 @@
 import React from "react";
 
-import "./Repos.css";
+import Buttons from "./Buttons";
+import Footer from "./Footer";
+import Form from "./Form";
+import RepoLinks from "./RepoLinks";
 
 const Repos = () => {
   return (
     <>
-      <form action="#" method="get" id="repoFormBg">
-        <button className="search-button">
-          <i className="fa-solid fa-magnifying-glass"></i>
-        </button>
-
-        <input
-          type="text"
-          placeholder="Find a repository..."
-          className="repo_search"
-        />
-      </form>
+      <Form />
+      <Buttons />
+      <h4>Repositories</h4>
+      <section id="repoLinksBg">
+        <RepoLinks />
+        <hr className="repo_divider" />
+        <RepoLinks />
+        <hr className="repo_divider" />
+        <RepoLinks />
+      </section>
+      <Footer />
     </>
   );
 };

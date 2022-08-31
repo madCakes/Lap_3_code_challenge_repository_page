@@ -2,15 +2,14 @@
 
 #bothTabsContainer {
   display: grid;
-  grid-template-columns: auto 15rem 1rem;
+  grid-template-columns: auto 13rem 3rem;
   justify-content: start;
   grid-gap: 1rem;
   padding-left: 1.5rem;
   align-items: center;
 }
 
-.tab_title1,
-.tab_title2 {
+.tab_title1 {
   padding: 0.5rem;
   cursor: pointer;
 }
@@ -18,6 +17,8 @@
 .tab_title2 {
   border-bottom: solid 0.1rem #ff8c00;
   width: 11rem;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .tab_title3 {
@@ -31,23 +32,26 @@
   margin-left: 0.5rem;
 }
 
+.tab_title1:hover,
+.tab_title2:hover,
+.tab_title3:hover {
+  background-color: #e5e4e2;
+  padding: 0.5rem;
+}
+
+.tab_title3:hover {
+  border-radius: 1rem;
+}
+
 #repoCount {
   background-color: #c0c0c0;
   border-radius: 1rem;
   padding: 0.3rem;
 }
 
-.tab_title1:hover {
-  background-color: #e5e4e2;
-  padding: 0.5rem;
-}
-
-.tab_title2:hover {
-  background-color: #e5e4e2;
-  padding: 0.5rem;
-}
-
-.tab_title3:hover {
-  background-color: #e5e4e2;
-  border-radius: 0.5rem;
+@media (min-width: 780px) {
+  #bothTabsContainer {
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+  }
 }

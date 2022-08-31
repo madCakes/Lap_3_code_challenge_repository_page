@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./Search.css"
+
 const Search = ({ handleSearch }) => {
   const [inputValue, setInputValue] = useState("");
 
@@ -15,7 +17,7 @@ const Search = ({ handleSearch }) => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} role="form">
+      <form onSubmit={handleSubmit} role="form" id="searchFormBg">
         <label htmlFor="search-box">GitHub Account </label>
         <input
           type="text"
@@ -24,6 +26,7 @@ const Search = ({ handleSearch }) => {
           onChange={handleInput}
           value={inputValue}
           required
+          placeholder="Search or jump to..."
         />
         <input type="submit" value="Search" />
       </form>
