@@ -5,6 +5,15 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
+      <section id="repoLinksFooterBg">
+        <button>
+          <i class="fa-solid fa-chevron-left"></i> Previous
+        </button>
+        <button>
+          Next <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </section>
+
       <footer id="footerBg">
         <span>Terms </span>
         <span>Privacy </span>

@@ -1,12 +1,5 @@
 /* repo links */
 
-/* title */
-h4 {
-  font-size: 1.5rem;
-  margin: 2rem 0 0 1rem;
-}
-
-/* inside rectangle */
 #repoLinksBg {
   margin-top: 2rem;
   padding: 0 0.5rem 0.5rem;
@@ -70,35 +63,4 @@ h4 {
 #iconBg .fa-solid.fa-code-pull-request:hover {
   color: #0000ff;
   cursor: pointer;
-}
-
-/* its 'footer' */
-#repoLinksFooterBg {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  grid-gap: 1rem;
-  margin-top: 2rem;
-}
-
-#repoLinksFooterBg button {
-  padding: 0.5rem;
-  cursor: pointer;
-  background-color: #fff;
-  border: #fff solid 0.1rem;
-  font-size: 1rem;
-}
-
-#repoLinksFooterBg button:nth-child(1) {
-  color: #c0c0c0;
-}
-
-#repoLinksFooterBg button:nth-child(2) {
-  color: #0000ff;
-}
-
-#repoLinksFooterBg button:nth-child(2):hover {
-  border: #e5e4e2 solid 0.1rem;
 }

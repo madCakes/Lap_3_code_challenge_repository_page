@@ -5,8 +5,6 @@ import "./RepoLinks.css";
 const RepoLinks = () => {
   return (
     <>
-      <h4>Repositories</h4>
-
       <section id="repoLinksBg">
         <ul id="listBg">
           <li>
@@ -34,15 +32,6 @@ const RepoLinks = () => {
           </span>
           <span>Updated 20 days ago</span>
         </div>
-      </section>
-
-      <section id="repoLinksFooterBg">
-        <button>
-          <i class="fa-solid fa-chevron-left"></i> Previous
-        </button>
-        <button>
-          Next <i class="fa-solid fa-chevron-right"></i>
-        </button>
       </section>
     </>
   );
