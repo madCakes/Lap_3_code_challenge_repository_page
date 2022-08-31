@@ -3,10 +3,9 @@ import axios from "axios";
 
 import { Header, Repos, Search } from "../../components";
 
-
 const Home = () => {
-  const [repoData, setRepoData] = useState("");
-  const [repoNames, setRepoNames] = useState("");
+  const [repoData, setRepoData] = useState([]);
+  const [repoNames, setRepoNames] = useState([]);
   const [searchString, setSearchString] = useState("madcakes");
 
   useEffect(() => {
@@ -15,18 +14,14 @@ const Home = () => {
         const { data } = await axios.get(
           `https://api.github.com/users/${searchString}/repos`
         );
-
-        setRepoData(data);
-
         // list of repo name
-        let listOfRepos = repoData.map((repo) => {
+        let listOfRepos = data.map((repo) => {
           return repo["name"];
         });
 
+        setRepoData(data);
         setRepoNames(listOfRepos);
-
         console.log(repoData);
-        console.log(repoNames);
       } catch (err) {
         console.log(err);
       }
@@ -40,10 +35,19 @@ const Home = () => {
   return (
     <>
       <Search handleSearch={handleSearch} />
+        <div>
+          {repoData.map((repo, i) => (
+            <RepoCard
+              key={repo["id"]}
+              repoName={repo["name"]}
+              url={repo["svn_url"]}
+            />
+          ))}
+        </div>     
       <Header />
       <main>
         <Repos />
-      </main>
+      </main>                    
     </>
   );
 };
