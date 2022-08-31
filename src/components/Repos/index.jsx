@@ -18,7 +18,6 @@ const Repos = () => {
         <hr className="repo_divider" />
         <RepoLinks />
       </section>
-
       <Footer />
     </>
   );
