@@ -3,15 +3,15 @@ import { createContext, useState } from "react";
 const RepoContext = createContext();
 
 export function RepoProvider({ children }) {
+  const [repos, setRepos] = useState();
   return (
     <RepoContext.Provider
       value={{
-        item: 1,
+        repos,
+        setRepos,
       }}
     >
       {children}
     </RepoContext.Provider>
   );
 }
-
-export default RepoProvider;
