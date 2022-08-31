@@ -16,15 +16,15 @@ const MainHeader = () => {
               <h3>futureproof</h3>
             </li>
             <li>
-              <i class="fa-solid fa-link"></i>
+              <i className="fa-solid fa-link"></i>
               <a href="#">http://getfutureproof.co.uk/</a>
             </li>
             <li>
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <a href="#"> hello@getfutureproof.co.uk</a>
             </li>
             <li>
-              <i class="fa-solid fa-building"></i>
+              <i className="fa-solid fa-building"></i>
               <a href="#">Part of futureproof</a>
             </li>
           </ul>
