@@ -6,9 +6,9 @@ const Buttons = () => {
   return (
     <>
       <section id="btnBg">
-        <button className="btn">Type <i class="fa-solid fa-caret-down"></i></button>
-        <button className="btn">Language <i class="fa-solid fa-caret-down"></i></button>
-        <button className="btn">Sort <i class="fa-solid fa-caret-down"></i></button>
+        <button className="btn">Type <i className="fa-solid fa-caret-down"></i></button>
+        <button className="btn">Language <i className="fa-solid fa-caret-down"></i></button>
+        <button className="btn">Sort <i className="fa-solid fa-caret-down"></i></button>
       </section>
     </>
   );

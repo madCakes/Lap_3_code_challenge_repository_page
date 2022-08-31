@@ -15,19 +15,19 @@ const RepoLinks = () => {
 
       <div id="iconBg">
         <span>
-          <i class="fa-solid fa-circle"></i> JavaScript
+          <i className="fa-solid fa-circle"></i> JavaScript
         </span>
         <span>
-          <i class="fa-solid fa-code-fork"></i>1
+          <i className="fa-solid fa-code-fork"></i>1
         </span>
         <span>
-          <i class="fa-solid fa-star"></i>0
+          <i className="fa-solid fa-star"></i>0
         </span>
         <span>
-          <i class="fa-solid fa-circle-dot"></i>1
+          <i className="fa-solid fa-circle-dot"></i>1
         </span>
         <span>
-          <i class="fa-solid fa-code-pull-request"></i>1
+          <i className="fa-solid fa-code-pull-request"></i>1
         </span>
         <span>Updated 20 days ago</span>
       </div>

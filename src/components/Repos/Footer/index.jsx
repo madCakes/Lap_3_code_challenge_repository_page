@@ -7,10 +7,10 @@ const Footer = () => {
     <>
       <section id="repoLinksFooterBg">
         <button>
-          <i class="fa-solid fa-chevron-left"></i> Previous
+          <i className="fa-solid fa-chevron-left"></i> Previous
         </button>
         <button>
-          Next <i class="fa-solid fa-chevron-right"></i>
+          Next <i className="fa-solid fa-chevron-right"></i>
         </button>
       </section>
 
@@ -28,7 +28,7 @@ const Footer = () => {
         <span>Blog </span>
         <span>About</span>
         <p>
-          <i class="fa-brands fa-github"></i> © 2022 GitHub, Inc.
+          <i className="fa-brands fa-github"></i> © 2022 GitHub, Inc.
         </p>
       </footer>
     </>
