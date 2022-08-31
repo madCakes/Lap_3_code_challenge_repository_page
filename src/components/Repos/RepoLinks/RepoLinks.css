@@ -1,0 +1,104 @@
+/* repo links */
+
+/* title */
+h4 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0 1rem;
+}
+
+/* inside rectangle */
+#repoLinksBg {
+  margin-top: 2rem;
+  padding: 0 0.5rem 0.5rem;
+  margin: 1rem;
+  border: solid 0.1rem #dcdcdc;
+  border-radius: 0.3rem;
+}
+
+#listBg {
+  list-style: none;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto;
+  line-height: 2rem;
+}
+
+#listBg li a {
+  text-decoration: none;
+  color: #0000ff;
+}
+
+#listBg li .public_private {
+  background-color: #f5f5f5;
+  border: #dcdcdc 0.1rem solid;
+  color: #000;
+  padding: 0.3rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
+  margin-left: 1rem;
+}
+
+#listBg li a:hover {
+  text-decoration: underline;
+}
+
+#iconBg {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  line-height: 2rem;
+}
+
+#iconBg span {
+  margin-right: 1rem;
+}
+
+#iconBg .fa-solid.fa-circle {
+  color: #ffff00;
+}
+
+#iconBg .fa-solid.fa-code-fork,
+#iconBg .fa-solid.fa-star,
+#iconBg .fa-solid.fa-circle-dot,
+#iconBg .fa-solid.fa-code-pull-request {
+  color: #c0c0c0;
+}
+
+#iconBg .fa-solid.fa-code-fork:hover,
+#iconBg .fa-solid.fa-star:hover,
+#iconBg .fa-solid.fa-circle-dot:hover,
+#iconBg .fa-solid.fa-code-pull-request:hover {
+  color: #0000ff;
+  cursor: pointer;
+}
+
+/* its footer */
+#repoLinksFooterBg {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+#repoLinksFooterBg button {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  border: #fff solid 0.1rem;
+  font-size: 1rem;
+}
+
+#repoLinksFooterBg button:nth-child(1) {
+  color: #c0c0c0;
+}
+
+#repoLinksFooterBg button:nth-child(2) {
+  color: #0000ff;
+}
+
+#repoLinksFooterBg button:nth-child(2):hover {
+  border: #e5e4e2 solid 0.1rem;
+}
