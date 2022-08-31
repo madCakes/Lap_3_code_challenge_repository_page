@@ -3,11 +3,27 @@ import axios from "axios";
 import { useEffect } from "react";
 
 const Search = () => {
-  useEffect(() => {});
+  useEffect(() => {}, []);
+
+  const handleInput = (e) => {
+    const newInput = e.target.value;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <>
-      <label htmlFor="search-box">GitHub Account </label>
-      <input type="text" name="search" id="search-box" />
+      <form onSubmit={handleSubmit} role="form">
+        <label htmlFor="search-box">GitHub Account </label>
+        <input
+          type="text"
+          name="search"
+          id="search-box"
+          onChange={handleInput}
+        />
+      </form>
     </>
   );
 };
