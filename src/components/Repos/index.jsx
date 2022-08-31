@@ -5,18 +5,24 @@ import Footer from "./Footer";
 import Form from "./Form";
 import RepoLinks from "./RepoLinks";
 
-const Repos = () => {
+const Repos = ({ repoData }) => {
   return (
     <>
-      <Form />
+      <Form repoData={repoData} />
       <Buttons />
       <h4>Repositories</h4>
       <section id="repoLinksBg">
-        <RepoLinks />
-        <hr className="repo_divider" />
-        <RepoLinks />
-        <hr className="repo_divider" />
-        <RepoLinks />
+        {repoData.map((repo) => (
+          <>
+            <RepoLinks
+              key={repo["id"]}
+              repoName={repo["name"]}
+              url={repo["svn_url"]}
+              repoData={repoData}
+            />
+            <hr className="repo_divider" />
+          </>
+        ))}
       </section>
       <Footer />
     </>

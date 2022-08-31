@@ -2,12 +2,12 @@ import React from "react";
 
 import "./RepoLinks.css";
 
-const RepoLinks = () => {
+const RepoLinks = ({ repoName, url, repoData }) => {
   return (
     <>
       <ul id="listBg">
         <li>
-          <a href="#">bhatia-cohort</a>
+          <a href="url">{repoName}</a>
           <span className="public_private">Public</span>
         </li>
         <li>Cohort repository for Bhatia</li>

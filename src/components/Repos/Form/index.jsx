@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Form.css";
 
-const Form = () => {
+const Form = ({ repoData }) => {
   return (
     <>
       <form action="#" method="get" id="repoFormBg">
