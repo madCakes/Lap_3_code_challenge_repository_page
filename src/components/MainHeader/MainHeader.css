@@ -1,0 +1,58 @@
+/* main header */
+#headerBg {
+  padding: 2rem 0 0;
+  background-color: #f8f8ff;
+  height: 19rem;
+  border-bottom: #f5f5f5 solid 0.1rem;
+}
+
+#headerBg .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+}
+
+#headerBg .list_container {
+  list-style: none;
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+.company_logo {
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+  width: 6rem;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.fa-solid.fa-link {
+  margin-right: 0.1rem;
+}
+
+.fa-solid.fa-building {
+  margin-right: 0.5rem;
+}
+
+#headerBg .list_container a {
+  text-decoration: none;
+  color: #000;
+}
+
+#headerBg button {
+  background-color: #f5f5f5;
+  border: #dcdcdc 0.1rem solid;
+  color: #000;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  margin: 2rem 0 2rem 1rem;
+}
+
+#headerBg button:hover {
+  background-color: #f2f3f4;
+}

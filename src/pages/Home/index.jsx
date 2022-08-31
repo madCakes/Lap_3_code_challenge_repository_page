@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import { Search } from "../../components";
+import { MainHeader, Repos, Search } from "../../components";
+
 
 const Home = () => {
   const [repoData, setRepoData] = useState("");
@@ -38,8 +39,12 @@ const Home = () => {
 
   return (
     <>
-      <h1>Home</h1>
-      <Search handleSearch={handleSearch} />
+      <MainHeader />
+      <main>
+        <Repos />
+        <Search handleSearch={handleSearch} />
+      </main>
+
     </>
   );
 };
