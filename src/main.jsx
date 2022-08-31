@@ -4,9 +4,14 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 
 import './index.css'
+import NavBar from './components/NavBar/index';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <NavBar/>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+  
 )
