@@ -11,7 +11,6 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       try {
-        const user = "madcakes";
         const { data } = await axios.get(
           `https://api.github.com/users/${searchString}/repos`
         );
@@ -19,7 +18,7 @@ const Home = () => {
         setRepoData(data);
 
         // list of repo name
-        const listOfRepos = data.map((repo) => {
+        let listOfRepos = repoData.map((repo) => {
           return repo["name"];
         });
 
