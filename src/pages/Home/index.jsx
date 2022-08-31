@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import { Header, Repos, Search } from "../../components";
+import { Header, RepoCard, Repos, Search } from "../../components";
 
 const Home = () => {
   const [repoData, setRepoData] = useState([]);
