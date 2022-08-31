@@ -2,6 +2,7 @@ import React from "react";
 
 import "./MainHeader.css";
 import companyLogo from "../../assets/companyLogo.png";
+import Tabs from "../Tabs";
 
 const MainHeader = () => {
   return (
@@ -30,6 +31,7 @@ const MainHeader = () => {
         </div>
 
         <button>Follow</button>
+        <Tabs />
       </header>
     </>
   );
