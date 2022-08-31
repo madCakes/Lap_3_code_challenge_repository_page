@@ -3,14 +3,13 @@ import axios from "axios";
 
 import { MainHeader, Repos, Search } from "../../components";
 
-
 const Home = () => {
   const [repoData, setRepoData] = useState("");
   const [repoNames, setRepoNames] = useState("");
   const [searchString, setSearchString] = useState("madcakes");
 
   useEffect(() => {
-    (async () => {
+    (async function searchAPI() {
       try {
         const { data } = await axios.get(
           `https://api.github.com/users/${searchString}/repos`
@@ -30,7 +29,9 @@ const Home = () => {
       } catch (err) {
         console.log(err);
       }
-    })();
+    });
+
+    searchAPI();
   }, [searchString]);
 
   function handleSearch(userInput) {
@@ -44,7 +45,6 @@ const Home = () => {
         <Repos />
         <Search handleSearch={handleSearch} />
       </main>
-
     </>
   );
 };
