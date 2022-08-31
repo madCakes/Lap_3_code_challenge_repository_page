@@ -39,12 +39,11 @@ const Home = () => {
 
   return (
     <>
+      <Search handleSearch={handleSearch} />
       <Header />
       <main>
         <Repos />
-        <Search handleSearch={handleSearch} />
       </main>
-
     </>
   );
 };
