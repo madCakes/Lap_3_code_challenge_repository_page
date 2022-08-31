@@ -9,7 +9,7 @@ const Home = () => {
   const [searchString, setSearchString] = useState("madcakes");
 
   useEffect(() => {
-    (async function searchAPI() {
+    (async () => {
       try {
         const { data } = await axios.get(
           `https://api.github.com/users/${searchString}/repos`
@@ -18,7 +18,7 @@ const Home = () => {
         setRepoData(data);
 
         // list of repo name
-        let listOfRepos = repoData.map((repo) => {
+        let listOfRepos = data.map((repo) => {
           return repo["name"];
         });
 
@@ -29,9 +29,7 @@ const Home = () => {
       } catch (err) {
         console.log(err);
       }
-    });
-
-    searchAPI();
+    })();
   }, [searchString]);
 
   function handleSearch(userInput) {
