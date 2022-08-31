@@ -1,7 +1,9 @@
 /* main header */
 #headerBg {
-  margin: 2rem 0 0;
+  padding: 2rem 0 0;
   background-color: #f8f8ff;
+  height: 19rem;
+  border-bottom: #f5f5f5 solid 0.1rem;
 }
 
 #headerBg .container {
@@ -49,4 +51,8 @@
   border-radius: 0.6rem;
   cursor: pointer;
   margin: 2rem 0 2rem 1rem;
+}
+
+#headerBg button:hover {
+  background-color: #f2f3f4;
 }

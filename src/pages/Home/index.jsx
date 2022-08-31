@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <>
       <MainHeader />
-      <Search />
+      <main>
+        <Search />
+      </main>
     </>
   );
 };
