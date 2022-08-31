@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import { MainHeader, Repos, Search } from "../../components";
+import { Header, Repos, Search } from "../../components";
 
 
 const Home = () => {
@@ -39,7 +39,7 @@ const Home = () => {
 
   return (
     <>
-      <MainHeader />
+      <Header />
       <main>
         <Repos />
         <Search handleSearch={handleSearch} />
