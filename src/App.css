@@ -1,5 +1,4 @@
-
-/************************************************************************** default customs */
+/* default customs */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +8,5 @@
 
 body {
   cursor: default;
-  padding-bottom: 10rem;
   position: relative;
 }
